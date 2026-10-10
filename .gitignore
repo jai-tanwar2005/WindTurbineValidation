@@ -1,0 +1,28 @@
+# MATLAB autosaves and temporary files
+*.asv
+*.m~
+*.autosave
+
+# MATLAB generated figures and binary outputs (uncomment if not needed in Git)
+# *.fig
+# *.mat
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor settings
+.vscode/
+.idea/
+
+# Temporary logs
+*.log
+
+# MATLAB workspace and downloaded starter package
+matlab.mat
+WindTurbineValidation_GitHub_Starter (1)/
+
+# MATLAB workspace and downloaded starter package
+matlab.mat
+WindTurbineValidation_GitHub_Starter (1)/
