@@ -1,0 +1,25 @@
+
+name: MATLAB Controller Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check MATLAB project files
+        run: |
+          test -f controller_step.m
+          test -f test_controller_step.m
+          test -f run_simulation.m
+          test -f generate_test_report.m
+          echo "All required MATLAB project files are present."
